@@ -1,0 +1,92 @@
+Soal No. 1
+PROGRAM GayaNewton
+
+
+DEKLARASI
+a <- massa benda (angka satuan kg)
+b <- percepatan (angka satuan m/s2)
+c <- gaya newton (angka satuan Newton)
+
+ALGORITMA
+c <- a * b
+write (c)
+c <- 600 kg * 2 m/s2
+c <- 1200 Newton
+
+Soal No. 2
+PROGRAM TahunKabisat
+
+DEKLARASI
+a <- (tahun) 
+b <- 4
+c <- 100
+d <- 400
+
+ALGORITMA
+if a mod b is 0
+then
+  if a mod c is 0
+  then
+    if a mod d is 0
+    then
+      Tahun_Kabisat
+    else
+      Bukan_Tahun_Kabisat
+  else Tahun_Kabisat
+else Bukan_Tahun_Kabisat
+
+contoh penerapan
+a <- 2020
+
+ALGORITMA
+if 2020 mod 4 is 0
+then
+  if 2020 mod 100 is 0
+  then
+    if 2020 mod 400 is 0
+    then
+      Tahun_Kabisat
+    else
+      Bukan_Tahun_Kabisat
+  else Tahun_Kabisat
+else Bukan_Tahun_Kabisat
+
+
+Soal No. 3
+PROGRAM Laundry
+
+DEKLARASI
+a <- jumlah kain
+
+store "a" with 0
+
+while "a" < 20
+  add "a" by 1
+
+end "mesin menyala"
+
+
+Soal No. 4
+PROGRAM Kuku
+
+DEKLARASI
+a <- jumlah siswa
+b <- siswa
+c <- tidak kuku panjang
+d <- kuku panjang
+
+ALGORITMA
+store a with 0
+
+while a < 40
+  add a by 1
+
+end "periksa kuku selesai"
+
+if b is c 
+then
+  if b not d
+  then
+    pujian
+  else pujian
+else hukuman
