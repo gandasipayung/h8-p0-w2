@@ -3,15 +3,15 @@ var bulan = 4; // assign nilai variabel bulan disini! (dengan angka antara 1 - 1
 var tahun = 1997; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
 
 if (tanggal < 1 || tanggal > 31){
-  console.log("Tanggal yang anda masukkan tidal valid!");
+  console.log("Maaf, Tanggal yang anda masukkan tidak valid!");
   console.log("Mohon masukkan tanggal dari angka 1 - 31 !");
 }
 if (bulan < 1 || bulan > 12){
-  console.log("Bulan yang anda masukkan tidal valid!");
+  console.log("Maaf, Bulan yang anda masukkan tidak valid!");
   console.log("Mohon masukkan bulan dari angka 1 - 12 !");
 }
 if (tahun < 1900 || tahun > 2200){
-  console.log("Mohon maaf, tahun yang anda masukkan tidak dapat diproses !");
+  console.log("Maaf, Tahun yang anda masukkan tidak dapat diproses !");
   console.log("Mohon masukkan tahun dari angka 1900 - 2200 !")
 } else{
   switch (bulan) {
