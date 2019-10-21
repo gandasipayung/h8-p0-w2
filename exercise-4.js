@@ -29,5 +29,3 @@ if (tahun < 1900 || tahun > 2200){
     case 12: tanggal > 0 && tanggal <= 31 ? console.log(`${tanggal} Desember ${tahun}`) : console.log("Bulan Desember hanya dari  tanggal 1-31 ! "); break;
 }
 }
-// selesai Selasa, Jam 02.16 WIB !!
-// akhirnya bisa tidur hehehe
