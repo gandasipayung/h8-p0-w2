@@ -52,6 +52,14 @@ then
 else Bukan_Tahun_Kabisat
 
 
+IF (a mod 4 = 0, a mod 100 <> 0)
+	DISPLAY “tahun kabisat”
+IF (a mod 4 = 0, a mod 100 = 0, a mod 400 = 0)
+	DISPLAY “tahun kabisat”
+ELSE DISPLAY “bukan tahun kabisat”
+
+
+
 Soal No. 3
 PROGRAM Laundry
 
