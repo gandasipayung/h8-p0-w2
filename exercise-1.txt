@@ -1,17 +1,24 @@
 Soal No. 1
 PROGRAM GayaNewton
 
-DEKLARASI
+PSEUDOCODE
 STORE "massaBenda" = 600
-STORE "percepatanGaya" = 2
-STORE "gayaNewton" = "massaBenda" * "percepatanGaya"
+STORE "percepatanBenda" = 2
+STORE "gayaNewton" = "massaBenda" * "percepatanBenda"
 
 DISPLAY "gayaNewton"
+
+ALGORITMA
+
+1. Masukkan nilai "massaBenda" dengan nilai yang memiliki satuan (Kg).
+2. Masukkan nilai "percepatanGaya" dengan nilai yang memiliki satuan (m/s2).
+3. Masukkan nilai "gayaNewton" dari hasil perhitungan "massaBenda" di kali "percepatanBenda".
+4. Tampilkan nilai "gayaNewton".
 
 Soal No.2
 PROGRAM TahunKabisat
 
-DEKLARASI
+PSEUDOCODE
 STORE "tahun" = (tahun)
 
 if ("tahun" mod 4 = 0 && "tahun" mod 100 != 0);
@@ -20,15 +27,31 @@ else if ("tahun" mod 4 = 0 && "tahun" mod 100 = 0 && "tahun" mod 400 = 0 ) ;
   DISPLAY "Tahun Kabisat" ;
 else DISPLAY "Bukan Tahun Kabisat" ;
 
+ALGORITMA
+1. Masukkan nilai dari "tahun" yang ingin diketahui sebagai tahun kabisat atau bukan.
+2. Jika nilai "tahun" habis dibagi 4 dan tidak habis dibagi 100, maka tampilkan "Tahun Kabisat".
+3. Jika nilai "tahun" habis dibagi 4, habis di bagi 100, dan habis 400 dibagi maka tampilkan "Tahun Kabisat".
+4. Jika nilai "tahun" tidak tidak memenuhi kondisi No.2 dan atau No.3 maka tampilkan "Bukan Tahun Kabisat"
+
+
 Soal No.3
+PROGRAM Laundy
+PSEUDOCODE
 STORE "kain" with any value (number)
 
 WHILE "kain" < 20
   ADD "kain" by 1
 DISPLAY "mesin berjalan"
 
+ALGORITMA
+1. Masukkan nilai "kain" dengan jumlah kain yang ingin dimasukkan ke mesin cuci.
+2. Saat nilai "kain" lebih kecil dari 20, maka tambahkan jumlah kain dengan 1, proses ini akan terus berulang sampai nilai "kain" tidak lebih kecil dari 20.
+3. Saat nilai "kain" tidak lebih kecil dari 20, maka tampilkan "mesin berjalan".
 
 Soal No. 4
+PROGRAM PemeriksaanKuku
+
+PSEUDOCODE
 STORE "siswa" with 0
 STORE "totalSiswa" with 40
 STORE "kuku" = "pendek" 
@@ -40,3 +63,8 @@ WHILE "siswa" < "totalSiswa"
     DO "hukuman"
   ADD "siswa" by 1
 DISPLAY "SELESAI"
+
+ALGORITMA
+1. ...............
+
+untuk perhitungan di atas belum benar, karena jika menggunakan program di atas maka hanya akan mengulang sampai jumlah siswa 40 tapi tidak dengan memeriksa kondisi kuku siswa.
