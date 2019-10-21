@@ -1,100 +1,42 @@
 Soal No. 1
 PROGRAM GayaNewton
 
-
 DEKLARASI
-a <- massa benda (angka satuan kg)
-b <- percepatan (angka satuan m/s2)
-c <- gaya newton (angka satuan Newton)
+STORE "massaBenda" = 600
+STORE "percepatanGaya" = 2
+STORE "gayaNewton" = "massaBenda" * "percepatanGaya"
 
-ALGORITMA
-c <- a * b
-write (c)
-c <- 600 kg * 2 m/s2
-c <- 1200 Newton
+DISPLAY "gayaNewton"
 
-Soal No. 2
+Soal No.2
 PROGRAM TahunKabisat
 
 DEKLARASI
-a <- (tahun) 
-b <- 4
-c <- 100
-d <- 400
+STORE "tahun" = (tahun)
 
-ALGORITMA
-if a mod b is 0
-then
-  if a mod c is 0
-  then
-    if a mod d is 0
-    then
-      Tahun_Kabisat
-    else
-      Bukan_Tahun_Kabisat
-  else Tahun_Kabisat
-else Bukan_Tahun_Kabisat
+if ("tahun" mod 4 = 0 && "tahun" mod 100 != 0);
+  DISPLAY "Tahun Kabisat";
+else if ("tahun" mod 4 = 0 && "tahun" mod 100 = 0 && "tahun" mod 400 = 0 ) ;
+  DISPLAY "Tahun Kabisat" ;
+else DISPLAY "Bukan Tahun Kabisat" ;
 
-contoh penerapan
-a <- 2020
+Soal No.3
+STORE "kain" with any value (number)
 
-ALGORITMA
-if 2020 mod 4 is 0
-then
-  if 2020 mod 100 is 0
-  then
-    if 2020 mod 400 is 0
-    then
-      Tahun_Kabisat
-    else
-      Bukan_Tahun_Kabisat
-  else Tahun_Kabisat
-else Bukan_Tahun_Kabisat
-
-
-IF (a mod 4 = 0, a mod 100 <> 0)
-	DISPLAY “tahun kabisat”
-IF (a mod 4 = 0, a mod 100 = 0, a mod 400 = 0)
-	DISPLAY “tahun kabisat”
-ELSE DISPLAY “bukan tahun kabisat”
-
-
-
-Soal No. 3
-PROGRAM Laundry
-
-DEKLARASI
-a <- jumlah kain
-
-store "a" with 0
-
-while "a" < 20
-  add "a" by 1
-
-end "mesin menyala"
+WHILE "kain" < 20
+  ADD "kain" by 1
+DISPLAY "mesin berjalan"
 
 
 Soal No. 4
-PROGRAM Kuku
+STORE "siswa" with 0
+STORE "totalSiswa" with 40
+STORE "kuku" = "pendek" 
 
-DEKLARASI
-a <- jumlah siswa
-b <- siswa
-c <- tidak kuku panjang
-d <- kuku panjang
-
-ALGORITMA
-store a with 0
-
-while a < 40
-  add a by 1
-
-end "periksa kuku selesai"
-
-if b is c 
-then
-  if b not d
-  then
-    pujian
-  else pujian
-else hukuman
+WHILE "siswa" < "totalSiswa"
+  IF "kuku" = "pendek"
+    DO "pujian"
+  ELSE
+    DO "hukuman"
+  ADD "siswa" by 1
+DISPLAY "SELESAI"
