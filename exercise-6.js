@@ -44,9 +44,8 @@ while (counter <= 100 ){
     console.log(counter + ' Kelipatan 3');
     counter += 2;
   } else {
-    console.log('');
     counter += 2 ;
-  }
+  } 
 }
 console.log('Soal No. 3 Looping Kelipatan 6 pertambahan 5');
 var counter = 1;
@@ -55,7 +54,6 @@ while (counter <= 100 ){
     console.log(counter + ' Kelipatan 6');
     counter += 5;
   } else {
-    console.log('');
     counter += 5;
   }
 }
@@ -66,7 +64,6 @@ while (counter <= 100 ){
     console.log(counter + ' Kelipatan 10');
     counter += 9;
   } else {
-    console.log('');
     counter += 9;
   }
 }

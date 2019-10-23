@@ -19,15 +19,15 @@ var hasilPerkalian = calculateMultiply(num1,num2);
 console.log(hasilPerkalian);
 
 console.log('Tugas 3');
-function processSentence(){
-  var fullSentence ='"Nama saya ' + name + ', '+ 'umur saya '+ age +' tahun, '+ 'alamat saya di ' + address +', '+'dan saya punya hobby yaitu '+ hobby + '!"';
+function processSentence(name, age, address, hobby){
+  var fullSentence ='Nama saya ' + name + ', '+ 'umur saya '+ age +' tahun, '+ 'alamat saya di ' + address +', '+'dan saya punya hobby yaitu '+ hobby + '!';
   return fullSentence;
 }
 
-var name = 'as';
+var name = 'Agus';
 var age = 30;
 var address = "Jln. Malioboro, Yogjakarta";
 var hobby = "gaming";
 
-var fullSentence = processSentence();
+var fullSentence = processSentence(name,age,address,hobby);
 console.log(fullSentence);
