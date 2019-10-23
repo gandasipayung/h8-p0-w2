@@ -1,69 +1,77 @@
-// Soal No. 1
 console.log('Soal No. 1, Looping dengan While')
 console.log('LOOPING PERTAMA');
-var nomor = 0;
-while (nomor < 20){
-  nomor += 2;
-  console.log(nomor + '- I love coding');
-}
-console.log('LOOPING KEDUA ');
-while (nomor >= 2 ){
-  console.log(nomor + '- I will become fullstack developer');
-  nomor -= 2 ;
-}
+var a = 0
+while (a < 20){
+  a += 2;
+  console.log(a + ' - I love coding');
+};
+console.log('LOOPING PERTAMA');
+var a = 20;
+while (a > 0 ){
+  console.log(a + ' - I will become fullstack developer');
+  a -= 2;
+};
+console.log(); // jarak
 
-// Soal No. 2  
 console.log('Soal No. 2 Looping dengan For');
 console.log('LOOPING PERTAMA');
-for(nomor = 1 ; nomor <= 20 ; nomor++){
-  console.log(`${nomor} - I love coding`);
-}
+var total = 20;
+for (a = 1 ; a <= total ; a++ ){
+  console.log(a + ' - I love coding');
+};
+console.log(); // jarak
 
 console.log('LOOPING KEDUA');
-for(nomor = 20; nomor > 0 ; nomor --){
-  console.log(`${nomor} - I love coding`);
-}
+var total = 20;
+for (a = total ; a > 0 ; a--){
+  console.log(a + ' - I will become fullstack developer');
+};
 
-// Soal No. 3
+console.log(); // jarak
+
 console.log('Soal No. 3 Looping Angka Ganjil dan Genap penambahan 1');
-var counter = 1;
-while (counter <= 100 ){
-  if (counter % 2 < 1){
-    console.log(counter + '- GENAP');
-    counter++;
-  
-  } else {
-    console.log(counter + '- GANJIL');
-    counter++;
+var total = 100;
+for (counter = 1 ; counter <= total ; counter++){
+  if (counter % 2 == 0){
+    console.log(counter + ' GENAP');
+  } else{
+    console.log(counter + ' GANJIL');
   }
-}
+};
+
+console.log(); // jarak
+
 console.log('Soal No. 3 Looping Kelipatan 3 pertambahan 2');
-var counter = 1;
-while (counter <= 100 ){
-  if (counter % 3 < 1){
-    console.log(counter + ' Kelipatan 3');
-    counter += 2;
+var total = 100;
+for (counter = 1 ; counter <= total ; counter += 2){
+  if (counter % 3 == 0){
+    console.log(counter + ' kelipatan 3');
   } else {
-    counter += 2 ;
-  } 
-}
-console.log('Soal No. 3 Looping Kelipatan 6 pertambahan 5');
-var counter = 1;
-while (counter <= 100 ){
-  if (counter % 6 < 1){
-    console.log(counter + ' Kelipatan 6');
-    counter += 5;
-  } else {
-    counter += 5;
+    // console.log('');
   }
-}
+};
+
+console.log(); // jarak
+
+console.log('Soal No. 3 Looping Kelipatan 6 pertambahan 5');
+var total = 100;
+for (counter = 1 ; counter <= total ; counter += 5){
+  if (counter % 6 == 0){
+    console.log(counter + ' kelipatan 6');
+  } else {
+    // console.log('');
+  }
+};
+
+console.log(); // jarak
+
 console.log('Soal No. 3 Looping Kelipatan 10 pertambahan 9');
 var counter = 1;
-while (counter <= 100 ){
-  if (counter % 10 < 1){
-    console.log(counter + ' Kelipatan 10');
-    counter += 9;
+var total = 100;
+for (counter = 1 ; counter <= total ; counter += 9){
+  if (counter % 10 == 0){
+    console.log(counter + ' kelipatan 10');
   } else {
-    counter += 9;
+    // console.log('');
   }
-}
+};
