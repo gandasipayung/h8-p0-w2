@@ -1,46 +1,47 @@
-Soal No. 1
+Soal No. 1 Menghitung Gaya Newton.
 PROGRAM GayaNewton
 
-PSEUDOCODE
-STORE "massaBenda" = 600
-STORE "percepatanBenda" = 2
-STORE "gayaNewton" = "massaBenda" * "percepatanBenda"
-
-DISPLAY "gayaNewton"
-
 ALGORITMA
-
 1. Masukkan nilai "massaBenda" dengan nilai yang memiliki satuan (Kg).
 2. Masukkan nilai "percepatanGaya" dengan nilai yang memiliki satuan (m/s2).
 3. Masukkan nilai "gayaNewton" dari hasil perhitungan "massaBenda" di kali "percepatanBenda".
 4. Tampilkan nilai "gayaNewton".
 
-Soal No.2
+PSEUDOCODE
+STORE "massaBenda" = 600
+STORE "percepatanBenda" = 2
+SET "gayaNewton" = "massaBenda" * "percepatanBenda"
+
+DISPLAY "gayaNewton"
+
+Soal No.2 Menghitung Tahun Kabisat
 PROGRAM TahunKabisat
 
-PSEUDOCODE
-STORE "tahun" = (tahun)
-
-if ("tahun" mod 4 = 0 && "tahun" mod 100 != 0);
-  DISPLAY "Tahun Kabisat";
-else if ("tahun" mod 4 = 0 && "tahun" mod 100 = 0 && "tahun" mod 400 = 0 ) ;
-  DISPLAY "Tahun Kabisat" ;
-else DISPLAY "Bukan Tahun Kabisat" ;
-
 ALGORITMA
-1. Masukkan nilai dari "tahun" yang ingin diketahui sebagai tahun kabisat atau bukan.
-2. Jika nilai "tahun" habis dibagi 4 dan tidak habis dibagi 100, maka tampilkan "Tahun Kabisat".
-3. Jika nilai "tahun" habis dibagi 4, habis di bagi 100, dan habis 400 dibagi maka tampilkan "Tahun Kabisat".
-4. Jika nilai "tahun" tidak tidak memenuhi kondisi No.2 dan atau No.3 maka tampilkan "Bukan Tahun Kabisat"
+1. Masukkan nilai "year" dengan tahun yang ingin diketahui sebagai tahun kabisat atau bukan.
+2. Jika nilai "year" habis dibagi 4 dan tidak habis dibagi 100, atau jika  nilai "year" habis dibagi 4, habis di bagi 100, dan habis 400 dibagi maka tampilkan "Tahun Kabisat".
+3. Jika nilai "year" tidak memenuhi kondisi No.2 maka tampilkan "Bukan Tahun Kabisat"
 
 
-Soal No.3
-PROGRAM Laundy
 PSEUDOCODE
-STORE "kain" with any value (number)
+STORE "year" with 2000
 
-WHILE "kain" < 20
-  ADD "kain" by 1
+IF "year" mod 4 = 0 AND "year" mod 100 != 0 OR "year" mod 4 = 0 && "year" mod 100 = 0 && "year" mod 400 = 0 THEN
+  DISPLAY "Tahun Kabisat"
+ELSE
+  DISPLAY "Bukan Tahun Kabisat"
+END IF
+
+
+
+Soal No.3 PROGRAM Laundy
+
+PSEUDOCODE
+STORE "kain" with 0
+
+WHILE "kain" < 20 
+  STORE 'kain' with 'kain' + 1
+END WHILE
 DISPLAY "mesin berjalan"
 
 ALGORITMA
@@ -48,23 +49,27 @@ ALGORITMA
 2. Saat nilai "kain" lebih kecil dari 20, maka tambahkan jumlah kain dengan 1, proses ini akan terus berulang sampai nilai "kain" tidak lebih kecil dari 20.
 3. Saat nilai "kain" tidak lebih kecil dari 20, maka tampilkan "mesin berjalan".
 
-Soal No. 4
-PROGRAM PemeriksaanKuku
+Soal No. 4 PROGRAM Pemeriksaan Kuku
 
 PSEUDOCODE
 STORE "siswa" with 0
 STORE "totalSiswa" with 40
-STORE "kuku" = "pendek" 
+STORE "kuku" = 'pendek' 
 
 WHILE "siswa" < "totalSiswa"
   IF "kuku" = "pendek"
     DO "pujian"
   ELSE
     DO "hukuman"
-  ADD "siswa" by 1
-DISPLAY "SELESAI"
+  STORE 'siswa' with "siswa" + 1
+END WHILE
 
 ALGORITMA
-1. ...............
-
-untuk perhitungan di atas belum benar, karena jika menggunakan program di atas maka hanya akan mengulang sampai jumlah siswa 40 tapi tidak dengan memeriksa kondisi kuku siswa.
+1. Masukkan nilai 'siswa' dengan 0 untuk memulai pemeriksaan kuku dari awal.
+2. Masukkan nilai 'totalSiswa' dengan jumlah seluruh siswa yang akan diperiksa.
+3. Masukkan nilai 'kuku' dengan nilai pendek.
+4. Jika nilai 'siswa' lebih kecil dari nilai 'totalSiswa' lanjutkan ke nomor 5.
+5. Jika nilai 'kuku' adalah 'pendek' maka beri pujian, jika nilai 'kuku' tidak pendek, maka lakukan hukuman.
+6. Masukkan nilai 'siswa' dengan nilai 'siswa' ditambah 1.
+7. Kembali ke nomor 4.
+8. Jika nilai 'siswa' tidak lebih kecil dari nilai 'totalSiswa' maka program berakhir.
